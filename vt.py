@@ -4,7 +4,7 @@ print "Input the hash: ",
 hash = raw_input()
 
 #Resource is the hash/file_name that you are looking for in VT
-hash_chk = {"resource": hash, "apikey": 'INSERT KEY HERE'}
+hash_chk = {"resource": hash, "apikey": ‘<INSERT KEY HERE>’}
 
 #Post request to VT for the hash/file in question
 vt_report = requests.post("https://www.virustotal.com/vtapi/v2/file/report", data=hash_chk)
